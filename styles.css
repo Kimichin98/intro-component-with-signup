@@ -1,6 +1,7 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f4f8;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../images/bg-intro-desktop.png);
 }
 
 .grid {
@@ -11,68 +12,126 @@ body{
   height: 100vh;
   align-items: center;
   justify-items: center;
-  border: #343a40 1px solid;
 }
 
-.left{
+.left {
   display: flex;
   flex-direction: column;
-  border: #6c757d 1px solid;
   height: auto;
   width: 80%;
   padding: 2rem;
   justify-content: center;
   align-items: center;
+  margin-left: 100px;
 }
 
-.left-title{
+.left-title {
   font-size: 40px;
   font-weight: 600;
-  color: #343a40;
+  color: white;
   margin-bottom: 1rem;
   inline-size: 80%;
 }
 
-.left-text{
+.left-text {
   font-size: 15px;
-  color: #6c757d;
+  color: white;
   inline-size: 80%;
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  border: #6c757d 1px solid;
   height: auto;
+  width: 500px;
 }
 
 .top-trial-container {
-  background-color: #343a40;
   text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.top-trial-button {
+  font-family: Poppins, sans-serif;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.highlight {
+  color: white;
+  font-weight: bold;
 }
 
 .user-data-container {
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
+  padding-top: 35px;
+  padding-bottom: 10px;
   gap: 1rem;
   text-align: left;
   align-items: center;
   height: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
 }
 
-.first-name{
-  border: #343a40 1px solid;
-  height: 100px;
-}
-
-.last-name{
-  border: #343a40 1px solid;
-}
-
-.last-name-form{
-  width: 400px;
+.first-name-form,
+.last-name-form,
+.email-address-form,
+.password-form {
+  width: 420px;
   height: 50px;
+  border: hsl(246, 25%, 77%) 1px solid;
+}
+
+.first-name input,
+.last-name input,
+.email-address input,
+.password input {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  padding-left: 24px;
+}
+
+.first-name-form::placeholder,
+.last-name-form::placeholder,
+.email-address-form::placeholder,
+.password-form::placeholder {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+
+.claim-trial-button {
+  font-family: Poppins, sans-serif;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 450px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.terms {
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+  margin-bottom: 20px;
+}
+
+.terms-link {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
 }
 
 .attribution {
