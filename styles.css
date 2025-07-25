@@ -84,13 +84,14 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
 }
 
-.first-name-form,
-.last-name-form,
-.email-address-form,
-.password-form {
+.first-name-form-input,
+.last-name-form-input,
+.email-address-form-input,
+.password-form-input {
   width: 420px;
   height: 50px;
   border: hsl(246, 25%, 77%) 1px solid;
+  border-radius: 10px;
 }
 
 .first-name input,
@@ -108,6 +109,37 @@ body {
 .password-form::placeholder {
   font-family: Poppins, sans-serif;
   font-size: 16px;
+}
+
+.error-message {
+  position: relative;
+  font-size: 12px;
+  font-family: Poppins, sans-serif;
+  color: red;
+  margin-bottom: -10px;
+  margin-top: -10px;
+  margin-left: 220px;
+  padding-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+input.error-border {
+  border: 1px solid red;
+}
+
+.error-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%; 
+  width: 20px;
+  height: 20px;
+  display: none; /* Initially hidden */
+}
+
+.show-error-icon {
+  display: inline-block; 
+  position: absolute;/* Show the icon when there's an error */
 }
 
 
