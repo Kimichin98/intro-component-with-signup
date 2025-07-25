@@ -24,11 +24,15 @@
     <div class="right">
       <div class="top-trial-container"><button class="top-trial-button"><span class="highlight">Try it free 7 days</span> then $20/mo. thereafter</button></div>
       <div class="user-data-container">
-        <div class="first-name"><form><input class="first-name-form" type="text" name="first-name" placeholder="First name" required></form></div>
-        <div class="last-name"><form><input class="last-name-form" type="text" name="last-name" placeholder="Last name" required></form></div>
-        <div class="email-address"><form><input class="email-address-form" type="email" name="email" placeholder="Email address" required></form></div>
-        <div class="password"><form><input class="password-form" type="password" name="password" placeholder="Password" required></form></div>
-        <div class="claim-trial"><button class="claim-trial-button">CLAIM YOUR FREE TRIAL</button></div>
+        <div class="first-name"><form id="first-name-form"><label for="firstName"><input class="first-name-form-input" type="text" id="first-name" name="first-name" placeholder="First name" required><img src="./images/icon-error.svg" alt="error" class="error-icon" id="first-name-icon"></label></form></div>
+        <span class="error-message" id="first-name-error"></span>
+        <div class="last-name"><form id="last-name-form"><label for="lastName"><input class="last-name-form-input" type="text" id="last-name" name="last-name" placeholder="Last name" required><img src="./images/icon-error.svg" alt="error" class="error-icon" id="last-name-icon"></label></form></div>
+        <span class="error-message" id="last-name-error"></span>
+        <div class="email-address"><form id="email-form"><label for="email"><input class="email-address-form-input" type="email" id="email" name="email" placeholder="Email address" required><img src="./images/icon-error.svg" alt="error" class="error-icon" id="email-icon"></label></form></div>
+        <span class="error-message" id="email-error"></span>
+        <div class="password"><form id="password-form"><label for="password"><input class="password-form-input" type="password" id="password" name="password" placeholder="Password" required><img src="./images/icon-error.svg" alt="error" class="error-icon" id="password-icon"></label></form></div>
+        <span class="error-message" id="password-error"></span>
+        <div class="claim-trial"><button class="claim-trial-button" type="submit" onclick="sendForm()">CLAIM YOUR FREE TRIAL</button></div>
         <div class="terms">By clicking the button, you are agreeing to our <a href="#" class="terms-link">Terms and Services</a></div>
       </div>
     </div>
@@ -41,5 +45,6 @@
       Coded by <a href="https://github.com/Kimichin98">Francisco Baron</a>.
     </p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
